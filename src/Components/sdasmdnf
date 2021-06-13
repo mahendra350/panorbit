@@ -1,0 +1,155 @@
+  {userprofile.map((userprofile) => {
+             return (
+                <div style={{ display: 'flex' }}>
+        <div className="profile-det-cont">
+          <div className="profile-image">
+            <img src={userprofile.profilepicture} alt="profile pic" />
+          </div>
+          <div>
+            <strong>{userprofile.name}</strong>
+          </div>
+          <div className="det-item">
+            <div className="label">Username : </div>
+            <div className="value"> {userprofile.username}</div>
+          </div>
+          <div className="det-item">
+            <div className="label">E-mail : </div>
+            <div className="value"> {userprofile.email}</div>
+          </div>
+          <div className="det-item">
+            <div className="label">Phone : </div>
+            <div className="value"> {userprofile.phone}</div>
+          </div>
+          <div className="det-item">
+            <div className="label">Website : </div>
+            <div className="value"> {userprofile.website}</div>
+          </div>
+
+          <div className="det-item border-top">
+            <div className="label">Company </div>
+          </div>
+
+          <div className="det-item">
+            <div className="label">Name : </div>
+            <div className="value">
+              {userprofile.company && userprofile.company.name}
+            </div>
+          </div>
+          <div className="det-item">
+            <div className="label">catchPhrase : </div>
+            <div className="value">
+              {userprofile.company && userprofile.company.catchPhrase}
+            </div>
+          </div>
+          <div className="det-item">
+            <div className="label">bs : </div>
+            <div className="value">
+              {userprofile.company && userprofile.company.bs}
+            </div>
+          </div>
+        </div>
+        <div className="profile-map-cont ">
+          <div className="profile-det-cont">
+            <div className="det-item ">
+              <div className="label">Address </div>
+              <div className="value"></div>
+            </div>
+            <div className="det-item">
+              <div className="label">Street : </div>
+              <div className="value">
+                {userprofile.address && userprofile.address.street}
+              </div>
+            </div>
+            <div className="det-item">
+              <div className="label">Suite : </div>
+              <div className="value">
+                {userprofile.address && userprofile.address.suite}
+              </div>
+            </div>
+            <div className="det-item">
+              <div className="label">City : </div>
+              <div className="value">
+                {userprofile.phone && userprofile.address.city}
+              </div>
+            </div>
+            <div className="det-item">
+              <div className="label">Zipcode : </div>
+              <div className="value">
+                {userprofile.address && userprofile.address.zipcode}
+              </div>
+            </div>
+          </div>
+
+          {/* <MapComponent /> */}
+        </div>
+      </div>
+             )
+        })}
+
+        // import React, { useEffect, useState } from 'react'
+// import './Userprofile.css'
+// import { useParams} from 'react-router-dom';
+
+// function UserProfile() {
+//   const [userprofile, setuserProfile] = useState([])
+//   const Params = useParams();
+ 
+//   const [userID,setUserID]=useState(Params.userId);
+
+//  const userData = userprofile.find(user => user.id === parseInt(userID))
+//   // const userData = userprofile.find(e => e.id === Params.userId)
+//     //  console.log(userData)
+//     useEffect(( )  => {
+       
+//          fetch('https://panorbit.in/api/users.json')
+//          .then((result) => result.json())
+//          .then((data) => {
+//           setuserProfile(data.users)
+//           //  console.log(data.users.find(user => user.id === userID))
+         
+//          })
+
+         
+//     },[])
+//     return (
+//        <div>
+//           {JSON.stringify(userData)}
+//            {userprofile.map((userData) => {
+//              return (
+//                 <div style={{ display: 'flex' }}>
+//              <div className="profile-det-cont">
+//           <div className="profile-image">
+//             <img src={userData.profilepicture} alt="profile pic" />
+//           </div>
+//             </div>
+//             </div>
+
+//              )
+//            })}
+//            </div>
+//     )
+// }
+
+// export default UserProfile
+
+
+import React from 'react'
+
+import './ProfileHeader.css'
+function ProfileHeader(prop) {
+  console.log(prop.data.name);
+     
+    return (
+        <div className="page-header-cont">
+        <div className='page-name'>Profile</div>
+        <div style={{ display: 'flex', alignItems: 'center' }}>
+          <div className="item-img ">
+            <img src='' alt="" />
+          </div>
+          <span>{prop.prop.name}</span>
+        </div>
+      </div>
+    )
+}
+
+export default ProfileHeader

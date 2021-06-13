@@ -1,0 +1,12 @@
+.profile-sidebar {
+  display: flex;
+  /* // justify-content: center; */
+  align-items: center;
+  height: 100vh;
+}
+.profile-header {
+  margin: 2.5rem 3rem;
+  margin-left: 0;
+  height: calc(100% - 5rem);
+  flex: 1;
+}

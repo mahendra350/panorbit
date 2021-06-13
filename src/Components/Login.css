@@ -1,0 +1,49 @@
+.login {
+  position: sticky;
+  background: url("../svg.png");
+  background-repeat: no-repeat;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  margin-top: 30px;
+  width: 570px;
+  margin: 3rem auto;
+  background: rgb(255, 255, 255);
+  border-radius: 15px;
+  padding: 1.5rem 2rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+}
+.person {
+  display: grid;
+  max-height: 100vh;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+}
+.person img {
+  width: 55px;
+  height: 55px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+}
+.container > h3 {
+  text-align: center;
+  font-size: 1.3rem;
+  margin-bottom: 30px;
+}
+.user {
+  margin-left: 20px;
+  text-decoration: none;
+  color: black;
+}
+.list-item {
+  text-decoration: none;
+}

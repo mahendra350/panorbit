@@ -1,0 +1,7 @@
+.app-body {
+  display: flex;
+}
+.side-main {
+  display: flex;
+  flex: 1;
+}

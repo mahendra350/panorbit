@@ -1,0 +1,42 @@
+.container1 {
+  width: 250px;
+  height: 100vh;
+  margin: 0.8rem 0;
+  margin-left: 30px;
+  max-width: var(--fixed-width);
+  background: linear-gradient(90deg, #325fc8, #723cc8);
+  border-radius: 40px;
+  padding: 1rem 2rem;
+}
+.sider {
+  padding-top: 220px;
+  padding-left: 25px;
+}
+.text {
+  display: block;
+  padding: 15px;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 2px;
+
+  margin-bottom: 1px;
+}
+.sidebar-item {
+  text-decoration: none;
+}
+
+.underline {
+  width: 3;
+  border-bottom: 1px solid #fff;
+}
+.list-item {
+  text-decoration: none;
+}
+.sider .text .hover {
+  background-color: #fff;
+}
+.sidebar-nav {
+  display: flex;
+  flex: 0.8;
+  justify-content: space-between;
+}
